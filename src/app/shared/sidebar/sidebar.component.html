@@ -1,0 +1,12 @@
+<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-light" style="height: 100vh;">
+  <a href="#" class="d-flex justify-content-center mb-3 mb-md-0 font-bold text-white text-decoration-none ">
+    <span class="fs-4 text-black-50">GifsApp</span>
+  </a>
+  <hr class="text-black-50">
+
+  <div class="list-group">
+    <a *ngFor="let keyword of historial" class="list-group-item pointer list-group-item-action" href="#" (click)="onSearchHistory(keyword)">{{keyword | titlecase}}</a>
+  </div>
+
+
+</div>
